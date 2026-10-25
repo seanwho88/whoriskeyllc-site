@@ -261,10 +261,12 @@
     <section>
       <h2>7. Security</h2>
       <p>
-        Authentication tokens are stored in platform-native secure storage (Android Keystore,
-        iOS Keychain). Data in transit is encrypted via TLS. Our backend enforces row-level
-        security so users can only access their own records. We apply the principle of least
-        privilege to all internal service accounts.
+        Sign-in is handled by Firebase Authentication, and the account details Voxtown keeps on
+        your device are held in platform secure storage (iOS Keychain, Android Keystore). Data in
+        transit is encrypted via TLS. Every request to view the feed or change data must carry a
+        valid sign-in token, which our server verifies before acting, and you can only change your
+        own account. Other users see only what Section 1 describes as shared, and people who have
+        blocked each other are hidden from one another.
       </p>
     </section>
 
