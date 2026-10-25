@@ -91,7 +91,7 @@
 
     <header>
       <h1>Privacy Policy</h1>
-      <p>Voxtown &mdash; Last updated: 2026-08-25</p>
+      <p>Voxtown &mdash; Last updated: 2026-10-25</p>
     </header>
 
     <section>
@@ -121,6 +121,8 @@
         <li>Display name (chosen by you, optional)</li>
         <li>Listener tag / persona (chosen by you, optional)</li>
         <li>Account creation timestamp</li>
+        <li>The last time you opened the app: a single timestamp, overwritten each time, used only to
+          decide whose recent plays the Graveyard shows</li>
       </ul>
 
       <p><strong>Authentication tokens</strong></p>
@@ -131,9 +133,18 @@
       <p><strong>Listening activity</strong></p>
       <ul>
         <li>Song title, artist, and album for the track you are currently playing</li>
+        <li>Tracks you finished playing in the last 7 days, as scrobbled to Last.fm, with the time
+          each one started. This includes tracks played while Voxtown is closed, but only from the
+          moment you connected Last.fm or last resumed sharing. Nothing played while sharing is
+          paused is recorded.</li>
         <li>Source of the track (Last.fm scrobble or manual entry)</li>
-        <li>Approximate timestamp when the track was posted</li>
+        <li>Approximate timestamp when a manually entered track was posted</li>
       </ul>
+      <p>
+        Other Voxtown users see your current track in the feed and your recent tracks in the
+        Graveyard, under the listener tag you choose. Your account name is shown only to people
+        whose connection you accept, and your email is never shown to anyone.
+      </p>
       <div class="highlight-box">
         Listening records are automatically deleted after <strong>7 days</strong>. We never store your full listening history.
       </div>
@@ -197,6 +208,14 @@
         You can sign in with Google, in which case Google may share your email address and
         display name with us. Google may process data in accordance with their
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+      </p>
+
+      <p><strong>Resend</strong></p>
+      <p>
+        When a user is reported, we email our moderation inbox through Resend so the report can be
+        reviewed promptly. That email contains internal user ID numbers and the report category
+        only: no names, email addresses, or message content. See
+        <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Resend's Privacy Policy</a>.
       </p>
 
       <p><strong>Apple (Sign in with Apple)</strong></p>
